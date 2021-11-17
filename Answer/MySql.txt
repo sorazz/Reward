@@ -1,0 +1,5 @@
+SELECT Orders_Products.Order_ID AS Number_Of_Order,
+ROUND(SUM(CASE WHEN Orders.Sales_type = 'Normal' THEN Normal_Price ELSE Promotion_Price END),2) 
+AS Total_Sales_Amount FROM Orders_Products INNER JOIN Orders
+ ON Orders_Products.Order_ID = Orders.Order_ID 
+GROUP BY Orders_Products.Order_ID ORDER BY `Number_Of_Order`

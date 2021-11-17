@@ -1,0 +1,15 @@
+
+Basic Value ( Actual Price) = order total x 100 / (100 + GST Rate )
+
+ Here, order total = MYR 5.00
+       GST Rate  = 6%
+      
+      Actual price = 5 X 100 /(100 + 6)
+		   =500 / 106
+                   =4.72
+      
+       Gst Amount = order total - Acutal price
+                  = 5 - 4.72
+                  = 0.28
+
+     GST Amount = MYR 0.28
